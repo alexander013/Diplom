@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2dd50444-e74c-4f76-8af7-862a3d774014" name="Changes" comment="initial" />
+    <list default="true" id="2dd50444-e74c-4f76-8af7-862a3d774014" name="Changes" comment="test3" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +37,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "tasks.servers"
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -83,7 +83,8 @@
     <MESSAGE value="Diplom" />
     <MESSAGE value=" Initial commit" />
     <MESSAGE value="initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial" />
+    <MESSAGE value="test3" />
+    <option name="LAST_COMMIT_MESSAGE" value="test3" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
