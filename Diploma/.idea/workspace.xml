@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b7d2cef-ca07-451d-a6dd-2c5c59d1d233" name="Changes" comment="Главная страница">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4b7d2cef-ca07-451d-a6dd-2c5c59d1d233" name="Changes" comment="Главная страница" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +18,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -31,65 +29,66 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/KurochkinAV/Desktop/TEST1Test.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/KurochkinAV/Desktop/autotesting-java-basics-diploma/Diploma",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\KurochkinAV\IdeaProjects\DiplomProjectAutotester\drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestHomePage.TEstProverka">
-    <configuration name="TestHomePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DiplomProjectAutotester" />
+  <component name="RunManager" selected="JUnit.HomePageTest.GoingToAlreadyOnSaleTest">
+    <configuration name="HomePageTest.GoingToAlreadyOnSaleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diploma" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestHomePage" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestHomePage.TEstProverka" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DiplomProjectAutotester" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestHomePage" />
-      <option name="METHOD_NAME" value="TEstProverka" />
+      <option name="MAIN_CLASS_NAME" value="HomePageTest" />
+      <option name="METHOD_NAME" value="GoingToAlreadyOnSaleTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestHomePage.TestHomePage_2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DiplomProjectAutotester" />
+    <configuration name="HomePageTest.GoingToBlockTabletsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diploma" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestHomePage" />
-      <option name="METHOD_NAME" value="TestHomePage_2" />
+      <option name="MAIN_CLASS_NAME" value="HomePageTest" />
+      <option name="METHOD_NAME" value="GoingToBlockTabletsTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestHomePage.TestHomePage_3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DiplomProjectAutotester" />
+    <configuration name="HomePageTest.GoingToOrderRegistrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diploma" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestHomePage" />
-      <option name="METHOD_NAME" value="TestHomePage_3" />
+      <option name="MAIN_CLASS_NAME" value="HomePageTest" />
+      <option name="METHOD_NAME" value="GoingToOrderRegistrationTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestHomePage.TestHomePage_5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DiplomProjectAutotester" />
+    <configuration name="HomePageTest.GoingToTheCameraUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diploma" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestHomePage" />
-      <option name="METHOD_NAME" value="TestHomePage_5" />
+      <option name="MAIN_CLASS_NAME" value="HomePageTest" />
+      <option name="METHOD_NAME" value="GoingToTheCameraUnitTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageTest.TestHomePage_7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diploma" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HomePageTest" />
+      <option name="METHOD_NAME" value="TestHomePage_7" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -97,11 +96,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestHomePage.TEstProverka" />
-        <item itemvalue="JUnit.TestHomePage.TestHomePage_3" />
-        <item itemvalue="JUnit.TestHomePage.TestHomePage_2" />
-        <item itemvalue="JUnit.TestHomePage.TestHomePage_5" />
-        <item itemvalue="JUnit.TestHomePage" />
+        <item itemvalue="JUnit.HomePageTest.GoingToAlreadyOnSaleTest" />
+        <item itemvalue="JUnit.HomePageTest.GoingToOrderRegistrationTest" />
+        <item itemvalue="JUnit.HomePageTest.GoingToTheCameraUnitTest" />
+        <item itemvalue="JUnit.HomePageTest.GoingToBlockTabletsTest" />
+        <item itemvalue="JUnit.HomePageTest.TestHomePage_7" />
       </list>
     </recent_temporary>
   </component>
