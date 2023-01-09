@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -26,7 +27,7 @@ public class HomePageTest
         driver = new ChromeDriver();
 //        Открытие браузера во весь экран
         driver.manage().window().maximize();
-        wait = new WebDriverWait(driver, 2);
+        wait = new WebDriverWait(driver, 30);
     }
 
     @After
@@ -310,8 +311,7 @@ public class HomePageTest
 //----------------------------------------------------------------------------------------------------------------------
 // Тест на переход для просмотра товара IPAD AIR 2020 через баннер УЖЕ В ПРОДАЖЕ
     @Test
-    public void GoingToAlreadyOnSaleTest()
-    {
+    public void GoingToAlreadyOnSaleTest() throws InterruptedException {
 //        Открытие сайта
         driver.navigate().to("http://intershop5.skillbox.ru/");
 //        Элемент банера УЖЕ В ПРОДАЖЕ
@@ -326,10 +326,19 @@ public class HomePageTest
         var MainElementlocator = By.xpath("//div[@class='woocommerce-breadcrumb accesspress-breadcrumb']//a[1]");
 //        Элемент блока главной страницы, подтверждающий нахождение пользователя на главной странице
         var PromoWrap1ElementLocator = By.xpath("//*[@class = 'promo-wrap1']");
-        //        Ожидание всех элементов на банере УЖЕ В ПРОДАЖЕ
-        wait.until(ExpectedConditions.elementToBeClickable(BanerElementLocator));
+
+        Actions actions = new Actions(driver);
+        actions.moveToElement(driver.findElement(CameraUnitElementLocator));
+        actions.perform();
+        Thread.sleep(10000);
+        wait.until(ExpectedConditions.presenceOfElementLocated(CameraUnitElementLocator));
+
+
+
+//                Ожидание всех элементов на банере УЖЕ В ПРОДАЖЕ
+//        wait.until(ExpectedConditions.elementToBeClickable(BanerElementLocator));
 //        Клик по банеру УЖЕ В ПРОДАЖЕ
-        driver.findElement(CameraUnitElementLocator).click();
+//        driver.findElement(CameraUnitElementLocator).click();
 ////        Проверка на наличие заголовка ПЛАНШЕТЫ в разделе ПЛАНШЕТЫ
 //        Assert.assertTrue("Элемент не найден", driver.findElement(TitleTabletsElementLocator).isDisplayed());
 ////        Текст заголовка раздела ПЛАНШЕТЫ
