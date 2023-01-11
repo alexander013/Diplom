@@ -29,66 +29,65 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/KurochkinAV/Desktop/autotesting-java-basics-diploma/Diploma",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/KurochkinAV/Desktop/autotesting-java-basics-diploma/Diploma&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\KurochkinAV\IdeaProjects\DiplomProjectAutotester\drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HomePageTest.GoingToAlreadyOnSaleTest">
-    <configuration name="HomePageTest.GoingToAlreadyOnSaleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.HomePageTest.SliderSaleTest">
+    <configuration name="HomePageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diploma" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="HomePageTest" />
-      <option name="METHOD_NAME" value="GoingToAlreadyOnSaleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageTest.AkTopTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diploma" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HomePageTest" />
+      <option name="METHOD_NAME" value="AkTopTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTest.GoingToBlockTabletsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HomePageTest.BannerTextTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diploma" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="HomePageTest" />
-      <option name="METHOD_NAME" value="GoingToBlockTabletsTest" />
+      <option name="METHOD_NAME" value="BannerTextTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTest.GoingToOrderRegistrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HomePageTest.ProductsViewedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diploma" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="HomePageTest" />
-      <option name="METHOD_NAME" value="GoingToOrderRegistrationTest" />
+      <option name="METHOD_NAME" value="ProductsViewedTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTest.GoingToTheCameraUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HomePageTest.SliderSaleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diploma" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="HomePageTest" />
-      <option name="METHOD_NAME" value="GoingToTheCameraUnitTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HomePageTest.TestHomePage_7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diploma" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HomePageTest" />
-      <option name="METHOD_NAME" value="TestHomePage_7" />
+      <option name="METHOD_NAME" value="SliderSaleTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -96,11 +95,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HomePageTest.GoingToAlreadyOnSaleTest" />
-        <item itemvalue="JUnit.HomePageTest.GoingToOrderRegistrationTest" />
-        <item itemvalue="JUnit.HomePageTest.GoingToTheCameraUnitTest" />
-        <item itemvalue="JUnit.HomePageTest.GoingToBlockTabletsTest" />
-        <item itemvalue="JUnit.HomePageTest.TestHomePage_7" />
+        <item itemvalue="JUnit.HomePageTest.SliderSaleTest" />
+        <item itemvalue="JUnit.HomePageTest.ProductsViewedTest" />
+        <item itemvalue="JUnit.HomePageTest" />
+        <item itemvalue="JUnit.HomePageTest.BannerTextTest" />
+        <item itemvalue="JUnit.HomePageTest.AkTopTest" />
       </list>
     </recent_temporary>
   </component>
