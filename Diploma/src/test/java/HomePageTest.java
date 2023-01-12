@@ -15,10 +15,9 @@ public class HomePageTest {
     private static WebDriverWait wait;
 
 
-//    Необходимо сделать так, чтобы браузер открывался один раз
+    //    Необходимо сделать так, чтобы браузер открывался один раз
     @BeforeClass
-    public static void setUp()
-    {
+    public static void setUp() {
         System.setProperty("webdriver.chrome.driver", "drivers\\chromedriver.exe");
         driver = new ChromeDriver();
 //     Открытие браузера во весь экран
@@ -29,13 +28,13 @@ public class HomePageTest {
     @AfterClass
     public static void tearDown() throws IOException {
         var sourceFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(sourceFile, new File("c:\\tmp\\screenshot.png"));
+        FileUtils.copyFile(sourceFile, new File("..\\Diploma\\tmp\\screenshot.png"));
         driver.quit();
     }
 // ----------------------------------------------------------------------------------------------------------------------
 
 
-//  ТЕСТ НА ПЕРЕХОД ПО ССЫЛКЕ http://intershop5.skillbox.ru/ И ПОПАДАНИЕ НА ГЛАВНУЮ СТРАНИЦУ САЙТА
+    //  ТЕСТ НА ПЕРЕХОД ПО ССЫЛКЕ http://intershop5.skillbox.ru/ И ПОПАДАНИЕ НА ГЛАВНУЮ СТРАНИЦУ САЙТА
     @Test
     public void OpenHomePageTest() {
 //        Открытие  страницы сайта
@@ -48,7 +47,7 @@ public class HomePageTest {
 //----------------------------------------------------------------------------------------------------------------------
 
 
-//----------------------------------------------------------------------------------------------------------------------
+    //----------------------------------------------------------------------------------------------------------------------
 //  ТЕСТ НА ПЕРЕХОД ИЗ РАЗДЕЛА "Главная" В РАЗДЕЛ "Каталог" И ОБРАТНО НА ГЛАВНУЮ СТРАНИЦУ
     @Test
     public void GoingToCatalogTest() {
@@ -80,7 +79,7 @@ public class HomePageTest {
 //----------------------------------------------------------------------------------------------------------------------
 
 
-//----------------------------------------------------------------------------------------------------------------------
+    //----------------------------------------------------------------------------------------------------------------------
 //  ТЕСТ НА ПЕРЕХОД ИЗ "Главная" В РАЗДЕЛ "Мой аккаунт" И НАЗАД НА ГЛАВНУЮ СТРАНИЦУ"
     @Test
     public void GoingToMyAccountTest() {
@@ -106,7 +105,7 @@ public class HomePageTest {
 //----------------------------------------------------------------------------------------------------------------------
 
 
-//----------------------------------------------------------------------------------------------------------------------
+    //----------------------------------------------------------------------------------------------------------------------
 //  ТЕСТ НА ПЕРЕХОД ИЗ РАЗДЕЛА "Главная" В РАЗДЕЛ "Корзина" И ВОЗВРАЩЕНИЕ НА ГЛАВНУЮ СТРАНИЦУ САЙТА
     @Test
     public void GoingToMyBasketTest() {
@@ -132,7 +131,7 @@ public class HomePageTest {
 //----------------------------------------------------------------------------------------------------------------------
 
 
-//    ----------------------------------------------------------------------------------------------------------------------
+    //    ----------------------------------------------------------------------------------------------------------------------
 //    ПЕРЕХОД В БЛОК КНИГИ ИЗ РАЗДЕЛА "Главная"
     @Test
     public void GoingToBookBlockTest() {
@@ -226,7 +225,7 @@ public class HomePageTest {
 //----------------------------------------------------------------------------------------------------------------------
 
 
-//----------------------------------------------------------------------------------------------------------------------
+    //----------------------------------------------------------------------------------------------------------------------
 //    Тест перехода в блок ФОТОАППАРАТЫ
 //    Здесь не соответствие заголовков при переходе в блок ФОТОАППАРТЫ
 //    ФОТОАППАРАТЫ - ФОТО/ВИДЕО
@@ -262,8 +261,7 @@ public class HomePageTest {
 //        Тест не проходит конечную проверку.
 
     @Test
-    public void GoingToAlreadyOnSaleTest()
-    {
+    public void GoingToAlreadyOnSaleTest() {
 //        Открытие сайта
         driver.navigate().to("http://intershop5.skillbox.ru/");
 //        Элемент банера УЖЕ В ПРОДАЖЕ
@@ -304,8 +302,7 @@ public class HomePageTest {
 //    Тест на работоспособность кнопки со стрелочкой для возврата наверх страницы
 
     @Test
-    public void AkTopTest()
-    {
+    public void AkTopTest() {
 //        Открытие сайта
         driver.navigate().to("http://intershop5.skillbox.ru/");
 //        Элемент кнопка скроллинга наверх страницы
@@ -314,7 +311,7 @@ public class HomePageTest {
         var SkillboxElementLocator = By.xpath("//*[@class = 'site-info']");
 //        Элемент вверха страницы сайта
         var SiteBrandingElementLocator = By.id("site-branding");
-//         Скроллинг до конца старницы сайта
+//         Скроллинг до конца страницы сайта
         Actions actions = new Actions(driver);
         actions.moveToElement(driver.findElement(SkillboxElementLocator));
         actions.perform();
@@ -323,22 +320,21 @@ public class HomePageTest {
 //        Ожидание исчезновения элемента кнопки для возвращения наверх страницы
         wait.until(ExpectedConditions.invisibilityOfElementLocated(AkTopElementLocator));
 //        Проверка на исчезновение элемента
-        Assert.assertTrue("Элемент не исчез", driver.findElements(AkTopElementLocator).size()==0);
+        Assert.assertTrue("Элемент не исчез", driver.findElements(AkTopElementLocator).size() == 0);
     }
 //    --------------------------------------------------------------------------------------------------------------------
 
 
-//    Тест на появление элемента с контактами внизу сайта
+    //    Тест на появление элемента с контактами внизу сайта
     @Test
-    public void BannerTextTest()
-    {
+    public void BannerTextTest() {
 //        Открытие сайта
         driver.navigate().to("http://intershop5.skillbox.ru/");
 //        Элемент с контактами внизу сайта
         var BannerTextElementLocator = By.xpath("//*[@class = 'banner-text wow fadeInLeft']");
 //        Элемент в самом низу страницы сайта
         var SkillboxElementLocator = By.xpath("//*[@class = 'site-info']");
-//         Скроллинг до конца старницы сайта
+//         Скроллинг до конца страницы сайта
         Actions actions = new Actions(driver);
         actions.moveToElement(driver.findElement(SkillboxElementLocator));
         actions.perform();
@@ -350,7 +346,7 @@ public class HomePageTest {
 //  --------------------------------------------------------------------------------------------------------------------
 
 
-//    Тест на появление раздела ПРОСМОТРЕННЫЕ ТОВАРЫ
+    //    Тест на появление раздела ПРОСМОТРЕННЫЕ ТОВАРЫ
     @Test
     public void ProductsViewedTest() throws InterruptedException {
 //        Открытие сайта
@@ -384,22 +380,19 @@ public class HomePageTest {
         Assert.assertTrue("Элемент не найден", driver.findElement(ProductsViewedElementLocator).isDisplayed());
     }
 
-//    Тест на измпенение товаров в слайдере РАСПРОДАЖА
+    //    Тест на измпенение товаров в слайдере РАСПРОДАЖА
     @Test
-    public void SliderSaleTest()
-    {
+    public void SliderSaleTest() {
 //        Открытие сайта
         driver.navigate().to("http://intershop5.skillbox.ru/");
 //        Элемент товара в слайдере РАСПРОДАЖА
         var ProductSaleElementLocator = By.xpath("(//*[@data-wow-delay='2s'])[2]");
-//        Элемент заголовка слайдера РАСПРОДАЖА
-        var SaleElementLocator = By.xpath("(//*[@class='prod-title'])[1]");
 //        Элемент стрелочка вправо в слайдере РАСПРОДАЖА
         var SlickNextElementLocator = By.xpath("(//a[@aria-label='next'])[1]");
 //        Элемент, который появляется при первом клике на стрелочку вправо, в слайдере РАСПРОДАЖА
         var NextTovarSliderElementLocator = By.xpath("(//*[@data-wow-delay='2s'])[2]");
 //        Скроллинг до  элемента товара в слайдере РАСПРОДАЖА
-        Actions  Saleactions = new Actions(driver);
+        Actions Saleactions = new Actions(driver);
         Saleactions.moveToElement(driver.findElement(ProductSaleElementLocator));
         Saleactions.perform();
 //        Ожидание элемента товара в слайдере РАСПРОДАЖА
@@ -408,11 +401,94 @@ public class HomePageTest {
         new Actions(driver)
                 .moveToElement(driver.findElement(ProductSaleElementLocator))
                 .perform();
-//        Клик по элементу  стрелочка вправо в слайдере РАСПРОДАЖА
+//        Клик по элементу стрелочка вправо в слайдере РАСПРОДАЖА
         driver.findElement(SlickNextElementLocator).click();
-//        Проверка на наличие элемента товара, который появялется при первом клике
+//        Проверка на наличие элемента товара, который появлялется при первом клике
 //        на стрелочку вправо, в слайдере РАСПРОДАЖА
         Assert.assertTrue("Элемент не найден", driver.findElement(NextTovarSliderElementLocator).isDisplayed());
     }
 
+//    Тест на клик по кнопке READ MORE на карточке товара раздела РАСПРОДАЖА
+
+    @Test
+    public void ReadMoreTest()
+    {
+//        Открытие сайта
+        driver.navigate().to("http://intershop5.skillbox.ru/");
+//        Элемент товара АННИГИЛЯТОРНАЯ ПУШКА в разделе РАСПРОДАЖА
+        var AnnihilatorCannonElementLocator = By.xpath("(//li[@data-wow-delay='0s'])[1]");
+//        Кнопка READ MORE (АННИГИЛЯТОРНАЯ ПУШКА)
+        var ReadMoreButtonElementLocator = By.xpath("(//a[@data-quantity='1'])[5]");
+//        Элемент слайдера РАСПРОДАЖА
+        var UnitElementLocator = By.xpath("(//ul)[5]");
+//        Элемент заголовка товара после клика по кнопке READ MORE (АННИГИЛЯТОРНАЯ ПУШКА)
+        var TitleAnnihilatorCannonElementLocator = By.xpath("//h1[@class = 'product_title entry-title']");
+//        Элемент текста названия товара в разделе РАСПРОДАЖА (АННИГИЛЯТОРНАЯ ПУШКА)
+        var ElementTextTovarLocator = By.xpath("(//h3)[5]");
+//        Скроллинг до элемента слайдера РАСПРОДАЖА
+        Actions SaleActions = new Actions(driver);
+        SaleActions.moveToElement(driver.findElement(UnitElementLocator));
+        SaleActions.perform();
+//        Ожидание элемента товара в слайдере РАСПРОДАЖА
+        wait.until(ExpectedConditions.elementToBeClickable(AnnihilatorCannonElementLocator));
+//        Текст названия товара в разделе РАСПРОДАЖА (АННИГИЛЯТОРНАЯ ПУШКА)
+        var TextTovarLocator =  driver.findElement(ElementTextTovarLocator).getText();
+//        Наведение курсора мыши на товар в слайдере РАСПРОДАЖА
+        new Actions(driver)
+                .moveToElement(driver.findElement(AnnihilatorCannonElementLocator))
+                .perform();
+//        Клик по кнопке READ MORE
+        driver.findElement(ReadMoreButtonElementLocator).click();
+//        Текст заголовка товара после клика по кнопке READ MORE (АННИГИЛЯТОРНАЯ ПУШКА)
+        var TitleText = driver.findElement(TitleAnnihilatorCannonElementLocator).getText();
+//        Проверка на наличие элемента заголовка товара после клика по кнопке READ MORE (АННИГИЛЯТОРНАЯ ПУШКА)
+        Assert.assertTrue("Элемент не найден", driver.findElement(TitleAnnihilatorCannonElementLocator).isDisplayed());
+//        Проверка на соответствие текста названия товара (АННИГИЛЯТОРНАЯ ПУШКА) в разделе РАСПРОДАЖА
+//        с текстом заголовка (АННИГИЛЯТОРНАЯ ПУШКА) в карточке товара
+        Assert.assertEquals("Текст не соответствует", TextTovarLocator, TitleText);
+
+    }
+
+//    Тест на отправку товара в корзину
+    @Test
+    public void SendingGoodsToBasketTest()
+    {
+//        Открытие сайта
+        driver.navigate().to("http://intershop5.skillbox.ru/");
+//        Элемент товара БАБОЧКА в разделе распродажа
+        var ButterflyElementLocator = By.xpath("(//*[@data-wow-delay='1s'])[5]");
+//        Элемент слайдера РАСПРОДАЖА
+        var UnitElementLocator = By.xpath("(//ul)[5]");
+//        Элемент кнопка В КОРЗИНУ
+        var ButtonToCartElementLocator = By.xpath("(//a[@data-product_id='3220'])[1]");
+//        Элемент кнопки ПОДРОБНЕЕ
+        var MoreElementLocator = By.xpath("//a[@class='added_to_cart wc-forward']");
+//        Элемент заголовка раздела КОРЗИНА
+        var TitleBasketElementLocator = By.xpath("//span[@class='current']");
+//        Скроллинг до элемента слайдера РАСПРОДАЖА
+        Actions SaleActions = new Actions(driver);
+        SaleActions.moveToElement(driver.findElement(UnitElementLocator));
+        SaleActions.perform();
+//        Ожидание элемента товара в слайдере РАСПРОДАЖА
+        wait.until(ExpectedConditions.elementToBeClickable(ButterflyElementLocator));
+//        Наведение курсора мыши на товар в слайдере РАСПРОДАЖА
+        new Actions(driver)
+                .moveToElement(driver.findElement(ButterflyElementLocator))
+                .perform();
+//        Наведение курсора мыши кнопку В КОРЗИНУ
+        new Actions(driver)
+                .moveToElement(driver.findElement(ButtonToCartElementLocator))
+                .perform();
+//        Клик по кнопке В КОРЗИНУ
+        driver.findElement(ButtonToCartElementLocator).click();
+//        Ожидание появления кнопки ПОДРОБНЕЕ
+        wait.until(ExpectedConditions.elementToBeClickable(MoreElementLocator));
+//        Клик по кнопке ПОДРОБНЕЕ
+        driver.findElement(MoreElementLocator).click();
+//        Проверка на что перешли в раздел КОРЗИНА
+        Assert.assertTrue("элемент не найден", driver.findElement(TitleBasketElementLocator).isDisplayed());
+    }
 }
+
+
+

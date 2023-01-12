@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b7d2cef-ca07-451d-a6dd-2c5c59d1d233" name="Changes" comment="Главная страница" />
+    <list default="true" id="4b7d2cef-ca07-451d-a6dd-2c5c59d1d233" name="Changes" comment="устранение замечаний и добавлены тесты" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,31 +43,12 @@
       <recent name="C:\Users\KurochkinAV\IdeaProjects\DiplomProjectAutotester\drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HomePageTest.SliderSaleTest">
-    <configuration name="HomePageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.HomePageTest.OpenHomePageTest">
+    <configuration name="HomePageTest.OpenHomePageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diploma" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="HomePageTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HomePageTest.AkTopTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diploma" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HomePageTest" />
-      <option name="METHOD_NAME" value="AkTopTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HomePageTest.BannerTextTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diploma" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HomePageTest" />
-      <option name="METHOD_NAME" value="BannerTextTest" />
+      <option name="METHOD_NAME" value="OpenHomePageTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -78,6 +59,26 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="HomePageTest" />
       <option name="METHOD_NAME" value="ProductsViewedTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageTest.ReadMoreTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diploma" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HomePageTest" />
+      <option name="METHOD_NAME" value="ReadMoreTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageTest.SendingGoodsToBasketTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diploma" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HomePageTest" />
+      <option name="METHOD_NAME" value="SendingGoodsToBasketTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -95,11 +96,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HomePageTest.OpenHomePageTest" />
+        <item itemvalue="JUnit.HomePageTest.SendingGoodsToBasketTest" />
+        <item itemvalue="JUnit.HomePageTest.ReadMoreTest" />
         <item itemvalue="JUnit.HomePageTest.SliderSaleTest" />
         <item itemvalue="JUnit.HomePageTest.ProductsViewedTest" />
-        <item itemvalue="JUnit.HomePageTest" />
-        <item itemvalue="JUnit.HomePageTest.BannerTextTest" />
-        <item itemvalue="JUnit.HomePageTest.AkTopTest" />
       </list>
     </recent_temporary>
   </component>
@@ -119,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673189192112</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="устранение замечаний и добавлены тесты">
+      <created>1673445625194</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673445625194</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,7 +143,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Главная страница" />
-    <option name="LAST_COMMIT_MESSAGE" value="Главная страница" />
+    <MESSAGE value="Устранение замечаний и добавление тестов" />
+    <MESSAGE value="устранение замечаний и добавлены тесты" />
+    <option name="LAST_COMMIT_MESSAGE" value="устранение замечаний и добавлены тесты" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
